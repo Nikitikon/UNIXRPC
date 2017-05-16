@@ -34,6 +34,8 @@ int main(int argc, const char * argv[]) {
     
     double pi = sqrt(2 * Pi());
     double e = Exp(1);
+    printf("%f\n", pi);
+    printf("%f\n", e);
     printf("%f", e / pi);
     return 0;
 }

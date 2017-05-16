@@ -26,8 +26,9 @@ double * mypi_1_svc(void *p, struct svc_req * cl){
     return &result;
 }
 
-double * myexp_1_svc(int *x, struct svc_req *cl){
-    double parameter = -((*x) * (*x))/2;
+double * myexp_1_svc(int *p, struct svc_req *cl){
+    int x = *p;
+    double parameter = -(double)(x * x)/2;
     static double result = 1;
     int n = 1;
     
